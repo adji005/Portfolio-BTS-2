@@ -480,40 +480,6 @@
         </div>
       </div>
 
-      <div class="contact__right reveal">
-        <form class="form" id="contactForm" action="contact.php" method="POST" novalidate>
-          <div class="field">
-            <label for="f-name">Nom</label>
-            <input id="f-name" name="name" type="text" placeholder="Ton nom" required />
-            <span class="field__err" data-err-for="name"></span>
-          </div>
-          <div class="field">
-            <label for="f-email">Email</label>
-            <input id="f-email" name="email" type="email" placeholder="ton@email.com" required />
-            <span class="field__err" data-err-for="email"></span>
-          </div>
-          <div class="field">
-            <label for="f-subject">Sujet</label>
-            <input id="f-subject" name="subject" type="text" placeholder="L'objet de ton message" required />
-            <span class="field__err" data-err-for="subject"></span>
-          </div>
-          <div class="field">
-            <label for="f-message">Message</label>
-            <textarea id="f-message" name="message" rows="5" placeholder="Écris-moi quelque chose..." required></textarea>
-            <span class="field__err" data-err-for="message"></span>
-          </div>
-          <!-- Honeypot anti-spam -->
-          <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off" />
-          <button type="submit" class="btn btn--solid btn--full" id="submitBtn">
-            <span id="submitLabel">Envoyer le message</span>
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M2 8h12M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
-          <p class="form__note" id="formNote">Le formulaire envoie un email via <code>PHPMailer</code> + SMTP Gmail.</p>
-        </form>
-      </div>
-    </div>
-  </section>
-
 </main>
 
 <!-- ============ FOOTER ============ -->
